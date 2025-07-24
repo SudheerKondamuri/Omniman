@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudheer Kondamuri - Flutter Developer & Blockchain Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="terminal-loader">
+                <span class="prompt">root@sudheer:~$</span>
+                <span class="command" id="loading-text"></span>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">SK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="glitch-wrapper">
+                        <h1 class="hero-title glitch" data-text="Sudheer Kondamuri">Sudheer Kondamuri</h1>
+                    </div>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate developer exploring the intersections of mobile app development, blockchain, and cybersecurity. 
+                        Inspired by shows like Mr. Robot, I aim to build secure, modern apps that blend Web2 and Web3 worlds.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">main.dart</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">class</span> <span class="class-name">Developer</span> {
+  <span class="keyword">final</span> <span class="type">String</span> name = <span class="string">'Sudheer'</span>;
+  <span class="keyword">final</span> <span class="type">List&lt;String&gt;</span> skills = [
+    <span class="string">'Flutter'</span>, <span class="string">'Blockchain'</span>, <span class="string">'Cybersecurity'</span>
+  ];
+  
+  <span class="keyword">void</span> <span class="function">buildTheFuture</span>() {
+    <span class="comment">// Creating secure, decentralized apps</span>
+    <span class="function">print</span>(<span class="string">'Hello, World!'</span>);
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">about_sudheer.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">sudheer@dev:~$</span>
+                                <span class="command">whoami</span>
+                            </div>
+                            <div class="terminal-output">
+                                <p>I'm a passionate developer currently exploring the intersections of mobile app development, blockchain, and cybersecurity. Inspired by shows like Mr. Robot, I aim to build secure, modern apps that blend Web2 and Web3 worlds.</p>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">sudheer@dev:~$</span>
+                                <span class="command">cat interests.txt</span>
+                            </div>
+                            <div class="terminal-output">
+                                <ul class="interests-list">
+                                    <li><i class="fas fa-mobile-alt"></i> Mobile App Development</li>
+                                    <li><i class="fas fa-link"></i> Blockchain Technology</li>
+                                    <li><i class="fas fa-shield-alt"></i> Cybersecurity</li>
+                                    <li><i class="fas fa-robot"></i> Decentralized Applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Commits This Year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        Mobile Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-link"></i>
+                        Blockchain & Web3
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">WalletConnect</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web3.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XMTP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend & APIs
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-shield-alt"></i>
+                        Security & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Cybersecurity</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Coming Soon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kube</h3>
+                        <p class="project-description">
+                            A personal finance tracker app with a unified dashboard showing crypto, stocks, cards, and UPI balances using real-time data.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">WalletConnect</span>
+                            <span class="tech-tag">Covalent API</span>
+                            <span class="tech-tag">Supabase</span>
+                        </div>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Coming Soon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">HashChat</h3>
+                        <p class="project-description">
+                            A decentralized chat + UPI payment app supporting wallet-based messaging using Matrix protocol and WalletConnect. Includes server-style communities like Discord.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Matrix</span>
+                            <span class="tech-tag">WalletConnect</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">XMTP</span>
+                            <span class="tech-tag">Razorpay</span>
+                        </div>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Flutter Online Store UI</h3>
+                        <p class="project-description">
+                            A multi-screen online store app UI made for competitions with creative widget use and responsive layout.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Let's Build Something Amazing Together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you want to discuss blockchain development, mobile apps, or cybersecurity, feel free to reach out!</p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:sudheersudheer7654321@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">sudheersudheer7654321@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kondamuri-satya-sudheer-1966222a4/" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">Kondamuri Satya Sudheer</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Sudheer7654321" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">Sudheer7654321</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Sudheer Kondamuri. Crafted with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Sudheer7654321" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kondamuri-satya-sudheer-1966222a4/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sudheersudheer7654321@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
