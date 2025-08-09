@@ -91,7 +91,7 @@ class _HomepageState extends State<Homepage> {
                                     if (snapshot.connectionState ==
                                         ConnectionState.waiting) {
                                       return Center(
-                                        child: CircularProgressIndicator(),
+                                        child: CircularProgressIndicator(color: Colors.white,),
                                       );
                                     } else if (snapshot.hasError) {
                                       return Text('Error: ${snapshot.error}');
